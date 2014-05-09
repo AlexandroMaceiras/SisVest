@@ -1,0 +1,25 @@
+﻿@model SisVest.WebUI.Models.AutenticacaoModel
+@{
+    ViewBag.Title = "Entrar";
+}
+<h2>
+    Entrar</h2>
+@if (!ViewBag.Autenticado)
+{
+    using (@Html.BeginForm())
+    {
+    @Html.EditorForModel()
+    <p>
+        <input type="submit" value="Entrar" />
+    </p>
+    }
+}
+else
+{
+    <p>Seja bem vindo @Model.NomeTratamento</p>
+    <p>
+    @Html.ActionLink("Lista de Vestibulares", "../Vestibular") <br />
+    @Html.ActionLink("Lista de Cursos", "../Curso") <br />
+    @Html.ActionLink("Sair / Deslogar", "Sair")
+</p>
+}

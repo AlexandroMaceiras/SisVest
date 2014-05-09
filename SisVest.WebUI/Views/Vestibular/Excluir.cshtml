@@ -1,0 +1,16 @@
+﻿@model SisVest.DomainModel.Entities.Vestibular
+@{
+    ViewBag.Title = "Excluir";
+}
+<h2>
+    Excluir Vestibular</h2>
+<!-- Aqui o BeginForm precisa declarar action, controller, model por estar usando o 
+Html.DisplayForModel(), com o @Html.EditorForModel() do anterar isto não é necessário -->
+@using (@Html.BeginForm("Excluir","Vestibular", Model))
+{
+
+    @Html.DisplayForModel()
+    <p>
+        <input type="submit" value="Excluir" />
+    </p>    
+}

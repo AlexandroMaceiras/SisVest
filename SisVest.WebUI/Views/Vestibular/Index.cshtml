@@ -1,0 +1,24 @@
+﻿@model IList<SisVest.DomainModel.Entities.Vestibular>
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Lista de Vestibulares</h2>
+<p>
+    @Html.ActionLink("Inserir Novo Vestibular", "Inserir")
+</p>
+@{
+    var grid = new WebGrid(source: Model, rowsPerPage: 3);
+}
+@grid.GetHtml(
+    tableStyle: "grid",
+    headerStyle: "header",
+    footerStyle: "footer",
+    columns: grid.Columns(
+    grid.Column("sDescricao", header: "Vestibular"),
+    grid.Column("dtInicioInscricao", header: "Inicio Iscrição", format: @<text>@item.dtInicioInscricao.ToString("dd/MM/yyyy")</text>),
+    grid.Column("dtFimInscricao", header: "Fim Inscritção", format: @<text>@item.dtFimInscricao.ToString("dd/MM/yyyy")</text>),
+    grid.Column("dtProva", header: "Data da Prova", format: @<text>@item.dtProva.ToString("dd/MM/yyyy")</text>),
+    grid.Column(header: "Editar", format: (itemDoController) => @Html.ActionLink("Alterar", "Alterar", new { id = itemDoController.iVestibularID }), canSort: false),
+    grid.Column(header: "Excluir", format: (itemDoController) => @Html.ActionLink("Excluir", "Excluir", new { id = itemDoController.iVestibularID }), canSort: false)
+    )
+)

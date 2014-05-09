@@ -1,0 +1,26 @@
+﻿@model SisVest.DomainModel.Entities.Vestibular
+@{
+    ViewBag.Title = "Inserir Vestibular";
+}
+<h2>Inserir Vestibular</h2>
+@using (@Html.BeginForm())
+{
+    //Assim (false) eu tiro a validação assincrona e deixo ele sincrona só nesta View sem necessidade
+    //de mudar nada no Web.config
+    //Isto pode ser feito também no Controller, mas aí eu tenho que por estes 2 comandos
+    //nas duas Actions!
+
+    //HtmlHelper.ClientValidationEnabled = false;
+    //HtmlHelper.UnobtrusiveJavaScriptEnabled = false;
+
+    @Html.EditorForModel()
+    <p>
+    <input type="submit" value="Inserir" />
+    </p>    
+}
+
+<script type="text/javascript">
+    $('#dtInicioInscricao').datepicker();
+    $('#dtFimInscricao').datepicker();
+    $('#dtProva').datepicker();
+</script>

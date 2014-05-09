@@ -1,0 +1,72 @@
+﻿@model IList<SisVest.WebUI.Models.CursoModel>
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Listagem de Cursos</h2>
+<p>
+    @Html.ActionLink("Inserir Novo Curso", "Inserir")
+</p>
+@{
+    var grid = new WebGrid(source: Model, rowsPerPage: 3);
+}
+@grid.GetHtml(
+    tableStyle: "grid",
+    headerStyle: "header",
+    footerStyle: "footer",
+    columns: grid.Columns
+    (
+    grid.Column("sDescricao", header: "Curso"),
+    grid.Column("iVagas", header: "Vagas"),
+        grid.Column("iTotalCandidatos", header: "Cad. Inscritos"),
+        grid.Column("iTotalCandidatosAprovados", header: "Cad. Aprovados"),
+            grid.Column(header: "Editar", format: (itemDoController) => @Html.ActionLink("Alterar", "Alterar", new { id = itemDoController.iCursoID }), canSort: false),
+                grid.Column(header: "Excluir", format: (itemDoController) => @Html.ActionLink("Excluir", "Excluir", new { id = itemDoController.iCursoID }), canSort: false)
+    )
+)
+<!--
+<table border="1">
+    <tr>
+        <th>
+            <strong>Curso</strong>
+        </th>
+        <th>
+            <strong>Vagas</strong>
+        </th>
+        <th>
+            <strong>Cand. Inscritos</strong>
+        </th>
+        <th>
+            <strong>Cand. Aprovados</strong>
+        </th>
+        <th>
+            <strong>Editar</strong>
+        </th>
+        <th>
+            <strong>Excluir</strong>
+        </th>
+    </tr>
+    @foreach (var curso in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(C => curso.sDescricao)
+            </td>
+            <td align="center">
+                @Html.DisplayFor(C => curso.iVagas)
+            </td>
+            <td align="center">
+                @Html.DisplayFor(C => curso.iTotalCandidatos)
+            </td>
+            <td align="center">
+                @Html.DisplayFor(C => curso.iTotalCandidatosAprovados)
+            </td>
+            <td>
+                @Html.ActionLink("Alterar", "Alterar", new { id = curso.iCursoID })
+            </td>
+            <td>
+                @Html.ActionLink("Excluir", "Excluir", new { id = curso.iCursoID })
+            </td>
+        </tr>   
+    }
+</table>
+-->

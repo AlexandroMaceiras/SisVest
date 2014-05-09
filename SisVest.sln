@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C1BF9FB7-A226-414B-A872-1404FBA6B249}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		SisVest.vsmdi = SisVest.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SisVest.DomainModel", "SisVest.DomainModel\SisVest.DomainModel.csproj", "{135BAD20-2A15-4E3C-BE9C-AD9264EB1360}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SisVest.Test", "SisVest.Test\SisVest.Test.csproj", "{8AFD4605-A851-4EF6-8AD6-02F9B241AF2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SisVest.WebUI", "SisVest.WebUI\SisVest.WebUI.csproj", "{0F2DD42B-4156-4612-AAA3-6193C468E7C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SisVest.DIExemplo", "SisVest.DIExemplo\SisVest.DIExemplo.csproj", "{82584DEE-7799-41EE-A11B-AC15E2A1E470}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{135BAD20-2A15-4E3C-BE9C-AD9264EB1360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{135BAD20-2A15-4E3C-BE9C-AD9264EB1360}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{135BAD20-2A15-4E3C-BE9C-AD9264EB1360}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{135BAD20-2A15-4E3C-BE9C-AD9264EB1360}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{135BAD20-2A15-4E3C-BE9C-AD9264EB1360}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{135BAD20-2A15-4E3C-BE9C-AD9264EB1360}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{135BAD20-2A15-4E3C-BE9C-AD9264EB1360}.Release|Any CPU.Build.0 = Release|Any CPU
+		{135BAD20-2A15-4E3C-BE9C-AD9264EB1360}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{135BAD20-2A15-4E3C-BE9C-AD9264EB1360}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{135BAD20-2A15-4E3C-BE9C-AD9264EB1360}.Release|x86.ActiveCfg = Release|Any CPU
+		{8AFD4605-A851-4EF6-8AD6-02F9B241AF2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AFD4605-A851-4EF6-8AD6-02F9B241AF2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AFD4605-A851-4EF6-8AD6-02F9B241AF2A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{8AFD4605-A851-4EF6-8AD6-02F9B241AF2A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{8AFD4605-A851-4EF6-8AD6-02F9B241AF2A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8AFD4605-A851-4EF6-8AD6-02F9B241AF2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AFD4605-A851-4EF6-8AD6-02F9B241AF2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AFD4605-A851-4EF6-8AD6-02F9B241AF2A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{8AFD4605-A851-4EF6-8AD6-02F9B241AF2A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{8AFD4605-A851-4EF6-8AD6-02F9B241AF2A}.Release|x86.ActiveCfg = Release|Any CPU
+		{0F2DD42B-4156-4612-AAA3-6193C468E7C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F2DD42B-4156-4612-AAA3-6193C468E7C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F2DD42B-4156-4612-AAA3-6193C468E7C8}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{0F2DD42B-4156-4612-AAA3-6193C468E7C8}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{0F2DD42B-4156-4612-AAA3-6193C468E7C8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0F2DD42B-4156-4612-AAA3-6193C468E7C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F2DD42B-4156-4612-AAA3-6193C468E7C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F2DD42B-4156-4612-AAA3-6193C468E7C8}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{0F2DD42B-4156-4612-AAA3-6193C468E7C8}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{0F2DD42B-4156-4612-AAA3-6193C468E7C8}.Release|x86.ActiveCfg = Release|Any CPU
+		{82584DEE-7799-41EE-A11B-AC15E2A1E470}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{82584DEE-7799-41EE-A11B-AC15E2A1E470}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{82584DEE-7799-41EE-A11B-AC15E2A1E470}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{82584DEE-7799-41EE-A11B-AC15E2A1E470}.Debug|x86.ActiveCfg = Debug|x86
+		{82584DEE-7799-41EE-A11B-AC15E2A1E470}.Debug|x86.Build.0 = Debug|x86
+		{82584DEE-7799-41EE-A11B-AC15E2A1E470}.Release|Any CPU.ActiveCfg = Release|x86
+		{82584DEE-7799-41EE-A11B-AC15E2A1E470}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{82584DEE-7799-41EE-A11B-AC15E2A1E470}.Release|Mixed Platforms.Build.0 = Release|x86
+		{82584DEE-7799-41EE-A11B-AC15E2A1E470}.Release|x86.ActiveCfg = Release|x86
+		{82584DEE-7799-41EE-A11B-AC15E2A1E470}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = SisVest.vsmdi
+	EndGlobalSection
+EndGlobal
