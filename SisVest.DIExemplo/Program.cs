@@ -11,7 +11,7 @@ namespace SisVest.DIExemplo
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
             IKernel ninjectKernel = new StandardKernel();
             ninjectKernel.Bind<ICursoRepository>().To <EFCursoRepository>();
